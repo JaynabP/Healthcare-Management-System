@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Organ & Blood Unit Availability</title>
+		<link rel="stylesheet" href="/css/Organandblood.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="logo">
+				<h1>HealthCare</h1>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#doctors">Find Doctors</a></li>
+					<li><a href="#labs">Lab Tests</a></li>
+					<li><a href="#prescriptions">Prescriptions</a></li>
+					<li><a href="#organ-blood">Organ & Blood Units</a></li>
+				</ul>
+			</nav>
+			<a href="#contact" class="contact-btn">Contact Us</a>
+		</header>
+
+		<div class="container">
+			<div class="content">
+				<h1>Check Availability of Organs & Blood Units</h1>
+				<p>
+					Find available organs and blood units in real time and request them
+					through our platform.
+				</p>
+				<button class="learn-more-btn">Learn More</button>
+			</div>
+
+			<!-- Organ and Blood Unit Form -->
+			<div class="availability-form">
+				<h2>Search for Available Units</h2>
+				<p>Enter details below to check availability</p>
+				<form>
+					<select name="unit-type" id="unit-type" class="form-input">
+						<option value="" disabled selected>Select Type</option>
+						<option value="organ">Organ</option>
+						<option value="blood">Blood</option>
+					</select>
+
+					<select name="unit" id="unit" class="form-input">
+						<option value="" disabled selected>Select Specific Unit</option>
+						<option value="heart">Heart</option>
+						<option value="kidney">Kidney</option>
+						<option value="liver">Liver</option>
+						<option value="A+">A+</option>
+						<option value="O-">O-</option>
+					</select>
+
+					<input
+						type="text"
+						placeholder="Enter Hospital Name"
+						class="form-input" />
+					<button class="check-btn">Check Availability</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Available Units Section -->
+		<div id="unit-info" class="unit-info-section">
+			<!-- Organ/Blood Unit 1 -->
+			<div class="unit-card">
+				<img src="/images/heart.webp" alt="Heart" class="unit-img" />
+				<div class="unit-details">
+					<h3>Heart</h3>
+					<p>Available at: St. John's Hospital</p>
+					<p>Status: Available</p>
+					<button class="request-btn">Request Unit</button>
+				</div>
+			</div>
+
+			<!-- Organ/Blood Unit 2 -->
+			<div class="unit-card">
+				<img src="/images/blood.jpg" alt="O+ Blood" class="unit-img" />
+				<div class="unit-details">
+					<h3>O+ Blood</h3>
+					<p>Available at: City Hospital</p>
+					<p>Status: Low Stock</p>
+					<button class="request-btn">Request Unit</button>
+				</div>
+			</div>
+		</div>
+		<script src="/js/Organandblood.js"></script>
+	</body>
+</html>

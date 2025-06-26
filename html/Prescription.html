@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prescription Management</title>
+		<link rel="stylesheet" href="/css/prescription.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="logo">
+				<h1>HealthCare</h1>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#doctors">Find Doctors</a></li>
+					<li><a href="#labs">Lab Tests</a></li>
+					<li><a href="#prescriptions">Prescriptions</a></li>
+					<li><a href="#organ-blood">Organ & Blood Units</a></li>
+				</ul>
+			</nav>
+			<a href="#contact" class="contact-btn">Contact Us</a>
+		</header>
+
+		<div class="container">
+			<div class="content">
+				<h1>Manage Your Prescriptions Easily</h1>
+				<p>
+					Access prescriptions from your doctors and purchase medications online
+					directly through our platform.
+				</p>
+				<button class="learn-more-btn">Learn More</button>
+			</div>
+
+			<!-- Prescription Management Form -->
+			<div class="prescription-form">
+				<h2>View and Manage Prescriptions</h2>
+				<p>
+					Enter the following details to view your prescriptions and purchase
+					medicines
+				</p>
+				<form>
+					<select name="doctor" id="doctor" class="form-input">
+						<option value="" disabled selected>Select Doctor</option>
+						<option value="dr-smith">Dr. Sarah Smith (Cardiology)</option>
+						<option value="dr-jones">Dr. Michael Jones (Neurology)</option>
+					</select>
+
+					<input
+						type="text"
+						placeholder="Enter Prescription ID"
+						class="form-input" />
+					<button class="check-btn">Check Prescription</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Prescription Details Section -->
+		<div id="prescription-info" class="prescription-info-section">
+			<!-- Prescription 1 -->
+			<div class="prescription-card">
+				<img src="/images/med1.png" alt="Medicine 1" class="medicine-img" />
+				<div class="prescription-details">
+					<h3>Prescription ID: 12345</h3>
+					<p>Doctor: Dr. Sarah Smith</p>
+					<p>Medicine: Amlodipine 10mg</p>
+					<p>Dosage: Once Daily</p>
+					<button class="purchase-btn">Purchase Medicine</button>
+				</div>
+			</div>
+
+			<!-- Prescription 2 -->
+			<div class="prescription-card">
+				<img src="/images/med2.jpg" alt="Medicine 2" class="medicine-img" />
+				<div class="prescription-details">
+					<h3>Prescription ID: 67890</h3>
+					<p>Doctor: Dr. Michael Jones</p>
+					<p>Medicine: Metformin 500mg</p>
+					<p>Dosage: Twice Daily</p>
+					<button class="purchase-btn">Purchase Medicine</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/Prescription.js"></script>
+	</body>
+</html>

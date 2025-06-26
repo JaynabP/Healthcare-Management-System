@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: "Arial", sans-serif;
+	background-color: #f4f4f4; /* Light grey for subtle background */
+	color: #333;
+	scroll-behavior: smooth;
+}
+
+.container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.2%22 d=%22M0,256L60,240C120,224,240,192,360,181.3C480,171,600,181,720,202.7C840,224,960,256,1080,261.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.1%22 d=%22M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,96C840,107,960,181,1080,213.3C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.05%22 d=%22M0,192L60,170.7C120,149,240,107,360,101.3C480,96,600,128,720,133.3C840,139,960,117,1080,122.7C1200,128,1320,160,1380,170.7L1440,181.3L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+/* Header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	background-color: white;
+	position: fixed;
+	height: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+	color: black; /* Black text for clarity */
+	font-size: 28px;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.header h1:hover {
+	color: #13ce66; /* Soft hover effect */
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin-left: 20px;
+}
+
+.nav-links a {
+	color: black; /* Black text for links */
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+	color: #0da87a; /* Soft hover effect */
+}
+
+/* Button Styles */
+.cta-btn,
+.contact-btn {
+	background-color: #13ce66; /* Primary button color */
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.cta-btn:hover,
+.contact-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.3%22 d=%22M0,256L60,240C120,224,240,192,360,181.3C480,171,600,181,720,202.7C840,224,960,256,1080,261.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.1%22 d=%22M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,96C840,107,960,181,1080,213.3C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3Cpath fill=%22%231ae1a8%22 fill-opacity=%220.05%22 d=%22M0,192L60,170.7C120,149,240,107,360,101.3C480,96,600,128,720,133.3C840,139,960,117,1080,122.7C1200,128,1320,160,1380,170.7L1440,181.3L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E");
+	background-size: cover;
+	background-position: center;
+	color: black; /* Text color for contrast */
+}
+
+.hero h2 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	transition: color 0.3s ease;
+}
+
+.hero p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+/* Services Section */
+.services {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 20px; /* Added horizontal padding */
+	background-color: #ffffff; /* White background for contrast */
+	flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+}
+
+.service-box {
+	text-align: center;
+	padding: 30px; /* Increased padding for more space */
+	width: calc(25% - 40px); /* Adjusted width to allow for margins */
+	background-color: #f9f9f9; /* Slightly darker than body */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin: 10px; /* Add margin for spacing */
+	display: flex; /* Use flexbox for alignment */
+	flex-direction: column; /* Stack elements vertically */
+	justify-content: space-between; /* Space out elements */
+}
+
+.service-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-box h3 {
+	margin-bottom: 30px;
+	font-size: 24px; /* Slightly larger for emphasis */
+	color: #000000; /* Main accent color */
+}
+
+/* Image style */
+.service-box img {
+	max-width: 100%; /* Responsive image */
+	height: auto; /* Maintain aspect ratio */
+	margin-bottom: 17px; /* Space below the image */
+	border-radius: 5px; /* Rounded corners */
+	align-self: center; /* Center the image */
+}
+
+/* Paragraph style */
+.service-box p {
+	font-size: 16px;
+	color: #555; /* Darker grey for text */
+	flex-grow: 1; /* Allow paragraph to grow and fill space */
+	display: flex; /* Use flexbox for alignment */
+	align-items: flex-end;
+	margin-bottom: 7px;
+	/* Align text at the bottom */
+}
+
+/* Button Styles */
+.cta-btn,
+.cta-btn-secondary {
+	background-color: #13ce66; /* Primary button color */
+	color: white;
+	padding: 12px 24px; /* Increased padding for better touch target */
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	border: 2px solid transparent; /* Add border for effect */
+	margin-top: 10px; /* Space above buttons */
+}
+
+.cta-btn:hover,
+.cta-btn-secondary:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+	border-color: #ffffff; /* Contrast border on hover */
+}
+
+/* About Us Section */
+.about-section {
+	background-color: #f9f9f9;
+	position: relative;
+}
+
+.about-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.about-content {
+	flex: 1;
+	max-width: 600px;
+	padding-right: 60px;
+}
+
+.about-content h2 {
+	font-size: 32px;
+	color: #13ce66;
+	margin-bottom: 20px;
+}
+
+.about-content p {
+	font-size: 18px;
+	color: #666;
+	line-height: 1.6;
+}
+
+.about-image {
+	flex: 1;
+	text-align: center;
+}
+
+.about-image img {
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-wave {
+	position: relative;
+}
+
+.about-wave svg {
+	width: 100%;
+	height: auto;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 20px; /* Adjust as necessary */
+	left: 50%;
+	transform: translateX(-50%);
+	color: white; /* Change this to your preferred color */
+	font-size: 18px; /* Adjust font size as needed */
+	text-align: center;
+}

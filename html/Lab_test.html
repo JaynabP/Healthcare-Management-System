@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lab Test Booking</title>
+		<link rel="stylesheet" href="/css/Lab_test.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo">
+				<h1>HealthCare</h1>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#doctors">Find Doctors</a></li>
+					<li><a href="#labs">Lab Tests</a></li>
+					<li><a href="#prescriptions">Prescriptions</a></li>
+					<li><a href="#organ-blood">Organ & Blood Units</a></li>
+				</ul>
+			</nav>
+			<a href="#contact" class="contact-btn">Contact Us</a>
+		</header>
+		<div class="container">
+			<div class="content">
+				<h1>Book Your Lab Tests Easily.</h1>
+				<p>
+					Schedule your lab tests conveniently and access your results online.
+				</p>
+				<button class="learn-more-btn">Learn More</button>
+			</div>
+			<div class="booking-form">
+				<h2>Book a Lab Test</h2>
+				<p>Fill out the details below to schedule your test.</p>
+				<form>
+					<select name="test" id="test" class="form-input">
+						<option value="" disabled selected>Select Lab Test</option>
+						<option value="blood-test">Blood Test (400)</option>
+						<option value="urine-test">Urine Test (200)</option>
+						<option value="xray">X-Ray (100)</option>
+					</select>
+					<input type="date" class="form-input" placeholder="Select Date" />
+					<input type="time" class="form-input" placeholder="Select Time" />
+					<button class="check-btn">Book Test</button>
+				</form>
+			</div>
+		</div>
+		<script src="/js/Lab_test.js"></script>
+	</body>
+</html>
