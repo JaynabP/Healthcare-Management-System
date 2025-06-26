@@ -4,30 +4,30 @@ A comprehensive, secure, and user-friendly web-based Healthcare Management Syste
 
 ## 🚀 Project Overview
 
-The Healthcare Management System is designed to digitize and enhance the day-to-day operations of healthcare institutions. It integrates essential functionalities—doctor consultations, appointment scheduling, lab test management, and medication inventory—into a unified platform. The system prioritizes data security, operational efficiency, and improved patient experience[1][2][3].
+The Healthcare Management System is designed to digitize and enhance the day-to-day operations of healthcare institutions. It integrates essential functionalities—doctor consultations, appointment scheduling, lab test management, and medication inventory—into a unified platform. The system prioritizes data security, operational efficiency, and improved patient experience.
 
 ## ✨ Key Features
 
 - **Secure User Authentication**  
-  Robust registration and login for doctors and patients, with encrypted passwords and unique usernames to ensure data privacy and controlled access[1][3].
+  Robust registration and login for doctors and patients, with encrypted passwords and unique usernames to ensure data privacy and controlled access.
 
 - **Efficient Appointment Scheduling**  
-  Patients can book appointments with doctors based on specialization and real-time availability. Doctors can manage their schedules and update their availability to prevent double-booking[2][3].
+  Patients can book appointments with doctors based on specialization and real-time availability. Doctors can manage their schedules and update their availability to prevent double-booking.
 
 - **Lab Test Management**  
-  Integrated module for booking lab tests and viewing results. Both patients and doctors can access diagnostic information, promoting continuity of care[2][3].
+  Integrated module for booking lab tests and viewing results. Both patients and doctors can access diagnostic information, promoting continuity of care.
 
 - **Medication Inventory Oversight**  
-  Administrative staff can track medication inventory, including quantity, pricing, and manufacturer details, ensuring effective medication management and patient safety[2][3].
+  Administrative staff can track medication inventory, including quantity, pricing, and manufacturer details, ensuring effective medication management and patient safety.
 
 - **Real-Time Resource Availability**  
-  Provides up-to-date information on blood types and organ availability at nearby medical facilities, enhancing emergency response capabilities[1][2][3].
+  Provides up-to-date information on blood types and organ availability at nearby medical facilities, enhancing emergency response capabilities.
 
 - **Data Consistency & Integrity**  
-  Carefully designed database schema (normalized up to 3NF) minimizes redundancy and enforces data integrity, ensuring reliable and accurate records[2][3].
+  Carefully designed database schema (normalized up to 3NF) minimizes redundancy and enforces data integrity, ensuring reliable and accurate records.
 
 - **Enhanced Patient Experience**  
-  Intuitive interface for booking appointments, accessing lab results, and viewing prescription history, empowering patients to actively participate in their healthcare journey[2][3].
+  Intuitive interface for booking appointments, accessing lab results, and viewing prescription history, empowering patients to actively participate in their healthcare journey.
 
 ## 🏥 User Roles
 
